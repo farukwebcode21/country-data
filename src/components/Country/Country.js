@@ -1,8 +1,9 @@
 import React from "react";
 
 const Country = (props) => {
-  console.log(props.countrys);
+  // console.log(props);
   const { name, population, flag, area, nativeName } = props.countrys;
+  const handleAddToButton = props.handleAddToButton;
 
   return (
     <div className="country-data">
@@ -15,7 +16,9 @@ const Country = (props) => {
         <p>Area :{area}</p>
         <p>Population: {population}</p>
       </div>
-      <button>Add Country</button>
+      <button onClick={() => handleAddToButton(props.countrys)}>
+        Add Country
+      </button>
     </div>
   );
 };
