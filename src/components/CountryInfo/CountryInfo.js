@@ -9,6 +9,10 @@ const CountryInfo = () => {
       .then((data) => setCountrys(data));
   }, []);
 
+  const addToHandle = () => {
+    console.log("added");
+  };
+
   return (
     <div className="container">
       <h2>Total {countrys.length} Country Information</h2>
