@@ -36,6 +36,16 @@
   margin-left: 10px;
   text-align: left;
 }
+.add-country {
+  display: flex;
+  position: relative;
+}
+.add-country p {
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid red;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .country {
